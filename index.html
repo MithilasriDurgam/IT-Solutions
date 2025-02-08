@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNITHIK IT Solutions | IT Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SNITHIK IT SOLUTIONS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Transforming Businesses with Technology</h2>
+            <p>SNITHIK IT Solutions delivers mission-critical IT services worldwide.</p>
+            <img src="images/about.png" alt="Tech Solutions">
+        </section>
+
+        <section id="about">
+            <h2>About SNITHIK IT Solutions</h2>
+            <p>SNITHIK IT Solutions in India is a hub of innovation and expertise. With 4+ years of experience, we help businesses tackle core challenges and seize new opportunities.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Cloud Solutions</h3>
+                    <p>Leverage cloud and infrastructure to power business growth.</p>
+                </div>
+                <div class="service">
+                    <h3>AI & Automation</h3>
+                    <p>Leveraging AI to enhance business efficiency.</p>
+                </div>
+                <div class="service">
+                    <h3>Cybersecurity</h3>
+                    <p>Protecting businesses from digital threats.</p>
+                </div>
+                <div class="service">
+                    <h3>IT Outsourcing</h3>
+                    <p>Optimized IT infrastructure and support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" style="background-size: cover; background-position: center; color: white; padding: 50px; text-align: center;">
+            <h2>Portfolio</h2>
+            <p>Growth Drivers</p>
+            <p>Customer Stories</p>
+            <p>Industry Spotlights</p>
+            <p>The Library</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact SNITHIK IT Solutions</h2>
+            <p>Get in touch with our team for business solutions.</p>
+
+            <div>
+                <label for="category-select">Select a category below:</label>
+                <select id="category-select" onchange="displayCategoryContent()">
+                    <option value="">Select...</option>
+                    <option value="sales">Sales and Solutions</option>
+                    <option value="vendors">Vendors and Suppliers</option>
+                    <option value="employment">Employment Verification</option>
+                </select>
+            </div>
+
+            <div id="category-content" class="hidden">
+                <p>Please select a category to view details.</p>
+            </div>
+        </section>
+    </main>
+
+    
+    <div id="chatbot">
+        <button id="chatbot-toggle">💬</button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">IT AI Chatbot</div>
+            <div id="chatbot-messages"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask about services...">
+                <button id="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
